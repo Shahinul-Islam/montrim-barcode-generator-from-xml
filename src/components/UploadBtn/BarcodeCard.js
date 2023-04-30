@@ -3,7 +3,7 @@ import React from "react";
 import HangTag from "./HangTag";
 
 const BarcodeCard = ({ jsonData }) => {
-	console.log(jsonData?.purchase_order);
+	// console.log(jsonData?.purchase_order);
 	/* console.log(
 		jsonData &&
 			jsonData?.purchase_order?.po_line_item?.map((item) => {

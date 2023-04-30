@@ -10,12 +10,12 @@
     color: black;
 }
 
-#root > div > div > div > div > div > div.text-center.relative > div{
+.storyName{
     position: absolute;
     transform: rotate(90deg);
     bottom: 59px;
-    color: black;
-    margin: 0 40px;
+    color: red;
+    margin: 0 45px;
 }
 
 #root > div > div > div > div > div > div.text-center.relative.py-1 > p{

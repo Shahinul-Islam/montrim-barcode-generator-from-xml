@@ -1,0 +1,33 @@
+#root > div > div > div > div > div > div.text-center > svg{
+    transform: rotate(90deg)!important;
+    margin: 0 auto;
+}
+
+#matalanWeb{
+    transform: rotate(90deg);
+    right: 0;
+    top: 58px;
+    color: black;
+}
+
+#root > div > div > div > div > div > div.text-center.relative > div{
+    position: absolute;
+    transform: rotate(90deg);
+    bottom: 59px;
+    color: black;
+    margin: 0 40px;
+}
+
+#root > div > div > div > div > div > div.text-center.relative.py-1 > p{
+    transform: rotate(90deg);
+    right: 75px;
+    bottom: -11px;
+    font-size: 10px;
+    
+}
+
+#root > div > div > div > div > div > p{
+    margin-top: 5px;
+    font-size: 8px;
+    font-weight: 700;
+}

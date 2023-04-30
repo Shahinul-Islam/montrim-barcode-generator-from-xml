@@ -1,5 +1,7 @@
 import React from "react";
 import Barcode from "react-barcode";
+import { BsCurrencyEuro } from "react-icons/bs";
+import "./HangTag.css";
 
 const HangTag = ({ item }) => {
 	let seasonCode = item.question[0].line_free_answer["#text"]["#text"];
@@ -24,27 +26,38 @@ const HangTag = ({ item }) => {
 	// };
 	return (
 		<div>
-			<div className="bg-lime-500 p-3 w-80 text-white mx-auto my-3">
-				<h2>www.matalan.co.uk</h2>
-				<p>{slicedBarCode}</p>
-				<p>Size</p>
-				<p>{primarySize}</p>
-				<div className="text-center">
+			<div className="bg-white p-3 w-80 text-black mx-auto my-3 shadow-lg">
+				<div>
+					<p>Size</p>
+					<p>{primarySize}</p>
+				</div>
+				<div className="text-center relative py-1">
 					<Barcode
 						value={`${barCode}`}
 						format="CODE128"
 						displayValue={true}
 						width={1}
 					/>
+					<h2 id="matalanWeb" className="absolute">
+						www.matalan.co.uk
+					</h2>
+					<p className="absolute">{slicedBarCode}</p>
 					<div>
-						<>{storyName}</>
+						<>
+							{storyName === "N/A" ? (
+								<>Story Name not found</>
+							) : (
+								<>{storyName}</>
+							)}
+						</>
 					</div>
 				</div>
 				<p>{seasonCode}</p>
 
-				<div>
-					<hr />
-					<p className="my-1 font-bold">$ {sellingPrice}</p>
+				<div className="border-t-2 border-dotted mt-2">
+					<p className="my-1 font-bold flex items-center justify-center">
+						<BsCurrencyEuro /> {sellingPrice}
+					</p>
 				</div>
 			</div>
 		</div>

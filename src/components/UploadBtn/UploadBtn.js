@@ -66,16 +66,6 @@ const UploadBtn = () => {
 				onChange={(e) => handleFileSelect(e)}
 				accept="text/xml"
 			/>
-			{/* <div>
-				<div className="bg-lime-500 p-3 w-80 text-white h-64 mx-auto my-3">
-					<h2>Matalan</h2>
-					<BarcodeCard jsonData={jsonData} />
-
-					<div>
-						<p>the code will go here</p>
-					</div>
-				</div>
-			</div> */}
 			<BarcodeCard jsonData={jsonData} />
 		</div>
 	);

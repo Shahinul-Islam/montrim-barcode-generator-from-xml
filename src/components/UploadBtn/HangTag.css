@@ -2,28 +2,33 @@
     transform: rotate(90deg)!important;
     margin: 0 auto;
 }
+.primarySize{
+    color: blue;
+    margin: 10px 0;
+}
 
 #matalanWeb{
     transform: rotate(90deg);
     right: 0;
-    top: 58px;
+    /* top: 58px; */
     color: black;
+    /* left: -112px; */
+    /* top: -12px; */
+    margin: -100px -17px;
 }
 
 .storyName{
     position: absolute;
     transform: rotate(90deg);
-    bottom: 59px;
-    color: red;
-    margin: 0 45px;
+    /* color: red; */
+    margin: -120px 35px;
 }
 
-#root > div > div > div > div > div > div.text-center.relative.py-1 > p{
+.slicedBarCode{
     transform: rotate(90deg);
-    right: 75px;
-    bottom: -11px;
-    font-size: 10px;
-    
+    right: 0;
+    margin: -40px 73px;
+    font-size: 12px;
 }
 
 #root > div > div > div > div > div > p{
@@ -31,3 +36,38 @@
     font-size: 8px;
     font-weight: 700;
 }
+.seasonCode{
+    /* color: ; */
+    right: 75px;
+    bottom: -11px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* barcode style  */
+#root > div > div > div > div > div > div.grid.grid-cols-3.items-center.gap-3.justify-self-center > div> svg{
+    /* transform: rotate(90deg)!important; */
+    /* padding: 7px 0; */
+    /* margin: 20px 0; */
+    /* color: pink; */
+}
+/* barcode style  */
+
+/* sliced first digit and code  */
+/* #root > div > div > div > div > div > div.grid.grid-cols-3.items-center.gap-3.justify-self-center > div> div{
+    font-size: 10px;
+    transform: rotate(90deg);
+    position: absolute;
+    left: -281px;
+    top: -10px;
+} */
+/* sliced first digit and code  */
+
+/* product size  */
+/* #root > div > div > div > div > div > div.grid.grid-cols-3.items-center.gap-3.justify-self-center > div > div{
+    margin: -76px 341px;
+    font-size: 30px;
+    transform: rotate(0deg);
+} */
+   
+/* product size  */

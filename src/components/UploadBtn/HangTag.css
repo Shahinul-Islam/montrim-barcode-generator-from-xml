@@ -3,7 +3,7 @@
     margin: 0 auto;
 }
 .primarySize{
-    color: blue;
+    /* color: blue; */
     margin: 10px 0;
 }
 
@@ -27,7 +27,7 @@
 .slicedBarCode{
     transform: rotate(90deg);
     right: 0;
-    margin: -40px 73px;
+    margin: -40px 65px;
     font-size: 12px;
 }
 
@@ -42,32 +42,5 @@
     bottom: -11px;
     font-size: 14px;
     font-weight: 600;
+    margin-top: 2px;
 }
-
-/* barcode style  */
-#root > div > div > div > div > div > div.grid.grid-cols-3.items-center.gap-3.justify-self-center > div> svg{
-    /* transform: rotate(90deg)!important; */
-    /* padding: 7px 0; */
-    /* margin: 20px 0; */
-    /* color: pink; */
-}
-/* barcode style  */
-
-/* sliced first digit and code  */
-/* #root > div > div > div > div > div > div.grid.grid-cols-3.items-center.gap-3.justify-self-center > div> div{
-    font-size: 10px;
-    transform: rotate(90deg);
-    position: absolute;
-    left: -281px;
-    top: -10px;
-} */
-/* sliced first digit and code  */
-
-/* product size  */
-/* #root > div > div > div > div > div > div.grid.grid-cols-3.items-center.gap-3.justify-self-center > div > div{
-    margin: -76px 341px;
-    font-size: 30px;
-    transform: rotate(0deg);
-} */
-   
-/* product size  */

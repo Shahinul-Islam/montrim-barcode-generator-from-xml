@@ -1,7 +1,10 @@
 import React from "react";
 import Barcode from "react-barcode";
 import { BsCurrencyEuro } from "react-icons/bs";
+import { BiRfid } from "react-icons/bi";
+import { BsCircle } from "react-icons/bs";
 import "./HangTag.css";
+import fscImage from "../../images/fsc.png";
 
 const HangTag = ({ item }) => {
 	// console.log(item.question);
@@ -29,18 +32,9 @@ const HangTag = ({ item }) => {
 			storyName = qsn?.line_free_answer["#text"]["#text"];
 		}
 	});
-
-	//practice to get every value looping through the array
-	// let seasonCode = item?.question[0]?.line_free_answer["#text"]["#text"];
-	// let prodCode = item["@attributes"]?.prod_code;
-	// let barCode = item?.question[1]?.line_free_answer["#text"]["#text"];
 	let slicedBarCode = barCode.slice(7, 12);
 	let slicedBarCodeFirstNumber = barCode.slice(0, 1);
 	let slicedBarCodeEightDigit = barCode.slice(0, 7);
-	// let storyName = item?.question[2]?.line_free_answer["#text"]["#text"];
-	// let sellingPrice = item?.question[3]?.line_free_answer["#text"]["#text"];
-
-	// let primarySize = item?.question[4]?.line_fixed_answer["#text"]["#text"];
 
 	let genderIdentityLetter;
 
@@ -69,16 +63,32 @@ const HangTag = ({ item }) => {
 		default:
 			break;
 	}
-	// console.log(genderIdentityLetter);
 	return (
 		<>
 			{item && item ? (
 				<div>
 					<div className="bg-white p-3 w-80 text-black mx-auto my-3 shadow-lg">
 						<div className="text-center relative py-1 -mx-1">
+							<div className="flex justify-around items-center">
+								<div className="flex flex-col justify-start">
+									<img src={fscImage} alt="" className="w-10" />
+									<div
+										style={{
+											fontSize: "10px",
+											marginTop: "3px",
+											marginLeft: "5px",
+										}}
+									>
+										<p className="text-start">Recycled</p>
+										<p>FSC&copy; C111278</p>
+									</div>
+								</div>
+								<BsCircle className="text-3xl"></BsCircle>
+								<BiRfid className="text-3xl" />
+							</div>
 							<div className="primarySize">
 								<p>Size</p>
-								<p>{primarySize}</p>
+								<p className="text-3xl">{primarySize}</p>
 							</div>
 							<Barcode
 								value={`${barCode}`}
@@ -91,7 +101,7 @@ const HangTag = ({ item }) => {
 								<div
 									style={{
 										fontSize: "10px",
-										margin: "-147px 64px",
+										margin: "-147px 53px",
 										transform: "rotate(90deg)",
 									}}
 									className="flex items-center absolute right-0 gap-1"

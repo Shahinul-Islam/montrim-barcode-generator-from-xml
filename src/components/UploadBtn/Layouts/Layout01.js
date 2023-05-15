@@ -35,7 +35,7 @@ const Layout01 = ({ item }) => {
 							<p>FSC&copy; C111278</p>
 						</div>
 					</div>
-					<BsCircle className="text-lg"></BsCircle>
+					<BsCircle className="text-base mt-5"></BsCircle>
 					<BiRfid className="text-lg" />
 				</div>
 				<div className="primarySize">
@@ -47,18 +47,18 @@ const Layout01 = ({ item }) => {
 					// value={"123456789012"}
 					format="EAN13"
 					displayValue={true}
-					width={1}
+					width={1.2}
 					height={40}
 				/>
 				<p className="text-sm seasonCode">{seasonCode}</p>
 				<span>
 					<GrBottomCorner className="bottomCorner" />
 				</span>
-				<div className="bg-yellow-400">
+				<div className="">
 					<div
 						style={{
 							fontSize: "10px",
-							margin: "103px 10px",
+							margin: "138px 7px",
 							transform: "rotate(90deg)",
 						}}
 						className="flex items-center absolute right-0 gap-1"
@@ -79,9 +79,9 @@ const Layout01 = ({ item }) => {
 			</div>
 
 			<div className="border-t-2 border-dotted mt-1 relative">
-				<p className="my-1 font-bold flex items-center justify-evenly">
-					<BsCurrencyEuro className="mr-8 mt-2" />{" "}
-					<span className="text-3xl absolute">{sellingPrice}</span>
+				<p className="my-1 font-bold flex items-center justify-center">
+					<BsCurrencyEuro className=" mt-2" />{" "}
+					<span className="text-2xl">{sellingPrice}</span>
 				</p>
 			</div>
 		</div>

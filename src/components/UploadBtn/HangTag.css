@@ -1,39 +1,32 @@
 #root > div > div > div > div > div > div.text-center > svg{
     transform: rotate(90deg)!important;
-    /* margin: 0 auto; */
     position: absolute;
-    margin-top: 91px;
-    margin-left: 18px;
+    margin-top: 135px;
+    margin-left: 12px;
 }
 .primarySize{
-    /* color: blue; */
-    /* margin-bottom: 50px; */
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 10px;
 }
-
 #matalanWeb{
     transform: rotate(90deg);
     right: 0;
-    /* top: 58px; */
-    color: black;
-    /* left: -112px; */
-    /* top: -12px; */
-    margin: 124px -29px;
+    margin: 172px -30px;
     font-size: 11px;
 }
 
 .storyName{
     position: absolute;
     transform: rotate(90deg);
-    /* color: red; */
-    margin: 122px 0px;
-    /* padding: 5px; */
+    margin: 167px 3px;
     font-size: 14px;
 }
 
 .slicedBarCode{
     transform: rotate(90deg);
     right: 0;
-    margin: 170px 23px;
+    margin: 225px 20px;
     font-size: 10px;
 }
 
@@ -43,22 +36,17 @@
     font-weight: 700;
 }
 .seasonCode{
-    /* color: ; */
-    /* right: 75px; */
-    /* bottom: -11px; */
     font-size: 10px;
     font-weight: 600;
-    margin-top: 178px;
+    margin-top: 236px;
     position: absolute;
-    right: 62px;
+    right: 58px;
     
 }
 
 .bottomCorner{
     transform: rotate(45deg);
-    left: 53px;
+    left: 60px;
     position: absolute;
-    bottom: 13px;
+    bottom: 17px;
 }
-
-/* #root > div > div > div > div:nth-child(1) > div > div.text-center.relative.py-1.-mx-1.h-\[310\.06px\] > svg */

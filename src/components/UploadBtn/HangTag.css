@@ -1,6 +1,9 @@
 #root > div > div > div > div > div > div.text-center > svg{
     transform: rotate(90deg)!important;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    position: absolute;
+    margin-top: 91px;
+    margin-left: 18px;
 }
 .primarySize{
     /* color: blue; */
@@ -14,21 +17,24 @@
     color: black;
     /* left: -112px; */
     /* top: -12px; */
-    margin: -100px -17px;
+    margin: 124px -29px;
+    font-size: 11px;
 }
 
 .storyName{
     position: absolute;
     transform: rotate(90deg);
     /* color: red; */
-    margin: -120px 35px;
+    margin: 122px 0px;
+    /* padding: 5px; */
+    font-size: 14px;
 }
 
 .slicedBarCode{
     transform: rotate(90deg);
     right: 0;
-    margin: -40px 65px;
-    font-size: 12px;
+    margin: 170px 23px;
+    font-size: 10px;
 }
 
 #root > div > div > div > div > div > p{
@@ -38,16 +44,21 @@
 }
 .seasonCode{
     /* color: ; */
-    right: 75px;
-    bottom: -11px;
-    font-size: 14px;
+    /* right: 75px; */
+    /* bottom: -11px; */
+    font-size: 10px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 178px;
+    position: absolute;
+    right: 62px;
+    
 }
 
 .bottomCorner{
     transform: rotate(45deg);
-    left: 111px;
+    left: 53px;
     position: absolute;
-    bottom: 25px;
+    bottom: 13px;
 }
+
+/* #root > div > div > div > div:nth-child(1) > div > div.text-center.relative.py-1.-mx-1.h-\[310\.06px\] > svg */

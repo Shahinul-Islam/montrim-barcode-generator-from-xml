@@ -47,18 +47,18 @@ const Layout01 = ({ item }) => {
 					// value={"123456789012"}
 					format="EAN13"
 					displayValue={true}
-					width={1.3}
+					width={1}
 					height={40}
 				/>
 				<p className="text-sm seasonCode">{seasonCode}</p>
 				<span>
 					<GrBottomCorner className="bottomCorner" />
 				</span>
-				<div>
+				<div className="bg-yellow-400">
 					<div
 						style={{
 							fontSize: "10px",
-							margin: "-147px 53px",
+							margin: "103px 10px",
 							transform: "rotate(90deg)",
 						}}
 						className="flex items-center absolute right-0 gap-1"
@@ -73,14 +73,15 @@ const Layout01 = ({ item }) => {
 					</h2>
 					<p className="absolute slicedBarCode">{slicedBarCode}</p>
 				</div>
-				<div>
+				<div className="">
 					<p className="storyName">{storyName}</p>
 				</div>
 			</div>
 
-			<div className="border-t-2 border-dotted mt-2">
-				<p className="my-1 font-bold flex items-center justify-center">
-					<BsCurrencyEuro /> <span className="text-xl">{sellingPrice}</span>
+			<div className="border-t-2 border-dotted mt-1 relative">
+				<p className="my-1 font-bold flex items-center justify-evenly">
+					<BsCurrencyEuro className="mr-8 mt-2" />{" "}
+					<span className="text-3xl absolute">{sellingPrice}</span>
 				</p>
 			</div>
 		</div>

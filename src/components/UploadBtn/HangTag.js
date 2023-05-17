@@ -2,6 +2,7 @@ import React from "react";
 import "./HangTag.css";
 import Layout01 from "./Layouts/Layout01";
 import Layout02 from "./Layouts/Layout02";
+import Layout01frontView from "./Layouts/Layout01frontView";
 
 const HangTag = ({ item }) => {
 	let sellingPrice;
@@ -73,6 +74,7 @@ const HangTag = ({ item }) => {
 		<>
 			{item && item ? (
 				<div className="flex justify-evenly">
+					<Layout01frontView />
 					<Layout01 item={requiredData} />
 					{/* <Layout02 item={requiredData} /> */}
 				</div>

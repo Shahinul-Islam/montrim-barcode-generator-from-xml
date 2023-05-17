@@ -21,7 +21,7 @@ const Layout01 = ({ item }) => {
 	return (
 		<div className="bg-white  text-black mx-auto my-3 shadow-lg h-[359.06px] w-[151.7px]">
 			<div className="text-center relative py-1 -mx-1 h-[310.06px]">
-				<div className="flex justify-around items-center">
+				<div className="flex justify-between items-center px-2">
 					<div className="flex flex-col justify-start">
 						<img src={fscImage} alt="" className="w-4" />
 						<div
@@ -35,12 +35,12 @@ const Layout01 = ({ item }) => {
 							<p>FSC&copy; C111278</p>
 						</div>
 					</div>
-					<BsCircle className="text-base mt-5"></BsCircle>
+					<BsCircle className="text-base mt-5 backCirlcle"></BsCircle>
 					<BiRfid className="text-lg" />
 				</div>
 				<div className="primarySize">
-					<p>Size</p>
-					<p className="text-xl">{primarySize}</p>
+					<p style={{ fontSize: "12px" }}>Size</p>
+					<p style={{ fontSize: "40px" }}>{primarySize}</p>
 				</div>
 				<Barcode
 					value={`${barCode}`}
@@ -57,8 +57,8 @@ const Layout01 = ({ item }) => {
 				<div className="">
 					<div
 						style={{
-							fontSize: "10px",
-							margin: "138px 7px",
+							fontSize: "7.33px",
+							margin: "135px 25px",
 							transform: "rotate(90deg)",
 						}}
 						className="flex items-center absolute right-0 gap-1"
@@ -79,9 +79,19 @@ const Layout01 = ({ item }) => {
 			</div>
 
 			<div className="border-t-2 border-dotted mt-1 relative">
-				<p className="my-1 font-bold flex items-center justify-center">
-					<BsCurrencyEuro className=" mt-2" />{" "}
-					<span className="text-2xl">{sellingPrice}</span>
+				<p
+					className="my-1 font-bold flex items-center justify-center"
+					style={{
+						position: "absolute",
+						top: "50%",
+						left: "50%",
+						transform: "translate(-50%,-26%)",
+					}}
+				>
+					<BsCurrencyEuro style={{ fontSize: "21px" }} className=" mt-2 " />{" "}
+					<span style={{ fontSize: "40px", fontWeight: "500" }}>
+						{sellingPrice}
+					</span>
 				</p>
 			</div>
 		</div>

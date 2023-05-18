@@ -1,6 +1,7 @@
 import React from "react";
 import Barcode from "react-barcode";
-import { BsCurrencyEuro } from "react-icons/bs";
+// import { BsCurrencyEuro } from "react-icons/bs";
+import { MdOutlineCurrencyPound } from "react-icons/md";
 import { BiRfid } from "react-icons/bi";
 import { BsCircle } from "react-icons/bs";
 import { GrBottomCorner } from "react-icons/gr";
@@ -49,6 +50,7 @@ const Layout01 = ({ item }) => {
 					displayValue={true}
 					width={1.2}
 					height={40}
+					font={"futura pt"}
 				/>
 				<p className="text-sm seasonCode">{seasonCode}</p>
 				<span>
@@ -58,17 +60,21 @@ const Layout01 = ({ item }) => {
 					<div
 						style={{
 							fontSize: "7.33px",
-							margin: "135px 25px",
+							margin: "137px 25px",
 							transform: "rotate(90deg)",
+							fontFamily: "helvetica regular",
 						}}
 						className="flex items-center absolute right-0 gap-1"
 					>
-						<p style={{ padding: "1px" }} className="border border-black">
+						<p
+							style={{ padding: "1px", height: "12px", width: "12px" }}
+							className="border border-black"
+						>
 							{genderIdentityLetter}
 						</p>
 						<p>{slicedBarCodeEightDigit}</p>
 					</div>
-					<h2 id="matalanWeb" className="absolute">
+					<h2 id="matalanWeb" className="absolute uppercase">
 						www.matalan.co.uk
 					</h2>
 					<p className="absolute slicedBarCode">{slicedBarCode}</p>
@@ -86,9 +92,15 @@ const Layout01 = ({ item }) => {
 						top: "50%",
 						left: "50%",
 						transform: "translate(-50%,-26%)",
+						fontFamily: "futura pt",
 					}}
 				>
-					<BsCurrencyEuro style={{ fontSize: "21px" }} className=" mt-2 " />{" "}
+					{/* <BsCurrencyEuro style={{ fontSize: "21px" }} className=" mt-2 " />{" "} */}
+					<MdOutlineCurrencyPound
+						style={{ fontSize: "21px" }}
+						className=" mt-2 "
+					/>
+
 					<span style={{ fontSize: "40px", fontWeight: "500" }}>
 						{sellingPrice}
 					</span>

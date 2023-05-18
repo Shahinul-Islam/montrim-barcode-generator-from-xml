@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'Futura PT';
+    src: url('../../fonts/FuturaPTBook.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'helvetica regular';
+    src: url('../../fonts/Helvetica/Helvetica Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* @font-face {
+    font-family: 'Futura PT';
+    src: url('..') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  } */
+/* body{
+    
+        font-family: 'Futura PT','helvetica regular', sans-serif;
+      
+} */
 #root > div > div > div > div > div > div.text-center > svg{
     transform: rotate(90deg)!important;
     position: absolute;
@@ -10,19 +34,22 @@
     margin-top: 10px; */
     left: 50%;
     transform: translate(-50%, 10%);
+    font-family: 'futura pt';
 }
 #matalanWeb{
     transform: rotate(90deg);
     right: 0;
-    margin: 179px 0px;
-    font-size: 8px;
+    margin: 176px -14px;
+    font-size: 9.33px;
+    font-family: 'futura pt'!important;
 }
 
 .storyName{
     position: absolute;
     transform: rotate(90deg);
-    margin: 167px 0px;
+    margin: 167px 7px;
     font-size: 10.5px;
+    font-family: 'futura pt';
 }
 
 .slicedBarCode{
@@ -30,6 +57,7 @@
     right: 0;
     margin: 225px 36px;
     font-size: 7.33px;
+    font-family: 'helvetica regular';
 }
 
 #root > div > div > div > div > div > p{
@@ -39,10 +67,11 @@
 }
 .seasonCode{
     font-size: 7.33px;
-    font-weight: 600;
+    /* font-weight: 600; */
     margin-top: 234px;
     position: absolute;
     right: 71px;
+    font-family: 'helvetica regular';
     
 }
 
@@ -50,7 +79,7 @@
     transform: rotate(45deg);
     left: 48px;
     position: absolute;
-    bottom: 17px;
+    bottom: 21px;
     font-size: 13.33px;
 }
 

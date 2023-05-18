@@ -10,7 +10,7 @@ const Layout01frontView = () => {
 			<div>
 				<p
 					className="text-white absolute rotate-90"
-					style={{ margin: "-70px 38px" }}
+					style={{ margin: "-142px 34px", wordSpacing: "13px" }}
 				>
 					ET VOUS
 				</p>
